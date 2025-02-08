@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "eeed4e0d-4835-4ad0-9ee1-b71241e4eab9",
+		"name": "api.labianco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21370284"
+	},
+	"item": [
+		{
+			"name": "AllParentCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/categories/parent",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"categories",
+						"parent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllSubCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/categories/sub",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"categories",
+						"sub"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/categories",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/category/{id}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"category",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/category/{Id}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"category",
+						"{Id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"parentCatId\": \"676b019c7adc62ad697baa81\",\r\n  \"name\": {\r\n    \"en\": \"Toasts\",\r\n    \"tr\": \"Tostlar\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/category",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/products",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productsByCateId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/product/orderTear/{CategoryId}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"product",
+						"orderTear",
+						"{CategoryId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tier\": 1,\r\n  \"categoriesId\": \"676d56bbf129d5479271e302\",\r\n  \"price\": 0,\r\n  \"name\": {\r\n    \"en\": \"string\",\r\n    \"tr\": \"string\"\r\n  },\r\n  \"detail\": {\r\n    \"en\": \"string\",\r\n    \"tr\": \"string\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/product",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tier\": 1,\r\n  \"categoriesId\": \"676d56bbf129d5479271e302\",\r\n  \"price\": 0,\r\n  \"name\": {\r\n    \"en\": \"string\",\r\n    \"tr\": \"string\"\r\n  },\r\n  \"detail\": {\r\n    \"en\": \"string\",\r\n    \"tr\": \"string\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/product/{Id}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"product",
+						"{Id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductIdAndTier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/product/IdAndTier/67701a00671ecd6717641a2e",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"product",
+						"IdAndTier",
+						"67701a00671ecd6717641a2e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Admin\",\r\n    \"email\":\"adminxx@gmail.com\",\r\n    \"password\":\"1234\",\r\n    \"roles\":[\"user\",\"admin\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseAuth}}/signup",
+					"host": [
+						"{{baseAuth}}"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Admin\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseAuth}}/signin",
+					"host": [
+						"{{baseAuth}}"
+					],
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ${Token}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/secret/dashboard",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"secret",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setTiers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": \"677022de7eeeb38b467a2887\",\r\n        \"tier\": 0\r\n    },\r\n    {\r\n        \"id\": \"677022de7eeeb38b467a2888\",\r\n        \"tier\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tiers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tiers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "baseAuth",
+			"value": "http://localhost:8080/api/auth",
+			"type": "string"
+		}
+	]
+}
