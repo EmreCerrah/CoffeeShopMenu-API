@@ -84,6 +84,8 @@ Admin Endpoints:
 
 `GET /secret/dashboard` - login to admin dasboard.
 
+If you want to see all API requests, you can use `http://localhost:8080/swagger-ui.html`
+
 ## Project Structure
 
 ```
@@ -93,11 +95,13 @@ CoffeeShopMenuAPI
 │   │   ├── java
 │   │   │   └── com
 │   │   │       └── coffeeshop
-│   │   │           └── menu
 │   │   │               ├── controller
+│   │   │               ├── dto
+│   │   │               ├── exceptions
 │   │   │               ├── model
 │   │   │               ├── repository
-│   │   │               └── service
+│   │   │               ├── service
+│   │   │               └── security
 │   │   └── resources
 │   │       └── application.properties
 ├── .gitignore
